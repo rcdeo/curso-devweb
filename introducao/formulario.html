@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Completo de Desenvolvedor Web</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+
+    <form action="" method="post">
+
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Seu nome" required autofocus tabindex="1" disabled> <!-- autofocus => o campo vem selecionado -->
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" class="form-control" placeholder="seu@email.com" required tabindex="2" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" name="nascimento" id="nascimento" class="form-control" min="2016-01-01" max="2016-01-15" required>
+        </div>
+
+        <div class="form-group">
+            <label>Sexo</label><br>
+            <input type="radio" name="sexo" id="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="sexo" id="masculino">
+            <label for="masculino">Masculino</label>
+        </div>
+
+        <div class="checkbox">
+            <label for="contrato">
+                <input type="checkbox" name="contrato" id="contrato" checked required>
+                Li e aceito os termos do contrato.
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" id="volume" min="0" max="100" value="25">
+        </div>
+
+        <div class="form-group">
+            <label for="bateria">Bateria</label>
+            <meter min="0" max="100" low="15" value="12">12</meter>
+        </div>
+
+        <div class="form-group">
+            <label for="carregando">Carregando</label>
+            <progress min="0" max="100" value="90">90%</progress>
+        </div>
+
+        <div class="form-group">
+            <label for="ano">Ano de Fabricação</label>
+            <input type="number" name="ano" id="ano" min="1920" max="2020" step="20" value="2020" class="form-control" tabindex="3">
+        </div>
+
+        <div class="form-group">
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="site">Site</label>
+            <input type="url" name="site" id="site" value="https://" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="busca">Busca</label>
+            <input type="search" name="busca" id="busca" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" cols="100" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="estado">Estado</label><br>
+            <select name="estado" id="estado">
+                <option value="SP">São Paulo</option>
+                <option value="MG" selected>Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="grupo-estados">Estado</label><br>
+            <select name="estado" id="grupo-estados">
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG" selected>Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <input type="hidden" name="id" value="1"> <!-- usado em api -->
+
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="mes">Mês</label>
+            <input type="month" name="mes" id="mes" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="semana">Semana</label>
+            <input type="week" name="semana" id="semana" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" id="hora" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="navegadores">Qual é o seu navegador?</label>
+            <input type="text" list="navegadores">
+            <datalist id="navegadores">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist>
+        </div>
+
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+    </form>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
