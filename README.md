@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img-a.udemycdn.com/course/240x135/674764_f980_6.jpg" width="240" height="135" alt="Curso Completo do Desenvolvedor Web" />
+  <img src="https://img-c.udemycdn.com/course/240x135/674764_f980_6.jpg" width="240" height="135" alt="Curso Completo do Desenvolvedor Web" />
 </p>
 
 <h3 align="center">
